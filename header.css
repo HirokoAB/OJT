@@ -2,11 +2,15 @@
   position: relative;
 }
 .menu{
+  margin-right: 140px;
   display: flex;
   justify-content: flex-end;
+
 }
 .menu p{
-  margin: 20px;
+  margin-top: 40px;
+  margin-left:20px;
+
 }
 .logo{
   position: absolute;
