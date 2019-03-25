@@ -3,6 +3,7 @@ li{
 }
 
 header{
+  position: relative;
   width: 100%;
 }
 
@@ -22,27 +23,27 @@ header{
 .header-img{
   text-align: center;
   margin-bottom: 20px;
+
 }
 
 .top-img{
-
-
+  width: 85%;
 }
 
 .logo{
   position: absolute;
-  top: 50px;
+  top: 30px;
   left: 50px;
 }
 
 .logo-text{
   position: absolute;
-  bottom: 150px;
-  right: 70px;
+  bottom: 0;
+  right: 30px;
 }
 
 header span{
-  margin-left: 80px;
+  margin-left: 50px;
 }
 
 /*記事一覧*/
