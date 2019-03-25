@@ -1,0 +1,33 @@
+.header{
+  position: relative;
+}
+.menu{
+  display: flex;
+  justify-content: flex-end;
+}
+.menu p{
+  margin: 20px;
+}
+.logo{
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  display: flex;
+}
+.img{
+  margin-top: 50px;
+  text-align: center;
+}
+.visual{
+  position: absolute;
+  right: 150px;
+  bottom: -10px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.text{
+  margin: 20px 0 0  100px;
+  display: flex;
+}
