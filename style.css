@@ -8,14 +8,14 @@ header{
 }
 
 /*ヘッダーメニュー*/
-.header{
+.header-menu{
   height: 100px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.header li{
+.header-menu li{
   margin-right: 40px;
 }
 
@@ -23,11 +23,6 @@ header{
 .header-img{
   text-align: center;
   margin-bottom: 20px;
-
-}
-
-.top-img{
-  width: 85%;
 }
 
 .logo{
@@ -36,14 +31,30 @@ header{
   left: 50px;
 }
 
-.logo-text{
+.topImg-pc{
+  width: 85%;
+}
+
+.topImg-sp{
+  display: none;
+}
+
+.logoText-pc{
   position: absolute;
   bottom: 0;
   right: 30px;
 }
 
-header span{
+.logoText-sp{
+  display: none;
+}
+
+header .pc{
   margin-left: 50px;
+}
+
+header .sp{
+  display: none;
 }
 
 /*記事一覧*/
@@ -102,7 +113,66 @@ footer{
 
 /*レスポンシブ対応*/
 @media screen and (max-width:767px){
-  
+  .header-menu{
+    display: none;
+  }
+
+  header .logo{
+    position: static;
+    margin-top: 20px;
+  }
+
+  .topImg-pc{
+    display: none;
+  }
+
+  .topImg-sp{
+    display: inline;
+    margin-top: 20px;
+    max-width: 90%;
+  }
+
+  .logoText-pc{
+    display: none;
+  }
+
+  .logoText-sp{
+    display: inline;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    width: 60%;
+  }
+
+  header .pc{
+    display: none;
+  }
+
+  .header-text{
+    display: flex;
+    justify-content: center;
+  }
+
+  header .sp{
+    display: inline;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .articles h1{
+    font-size: 32px;
+  }
+
+  .img-box{
+    flex-direction: column;
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  .img-box li{
+    margin-bottom: 20px;
+  }
+
 }
 
 
