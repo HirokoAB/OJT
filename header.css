@@ -2,15 +2,16 @@
   position: relative;
 }
 .menu{
-  margin-right: 170px;
+  margin-right: 190px;
   display: flex;
   justify-content: flex-end;
 
 }
 .menu p{
-  margin-top: 40px;
-  margin-left:20px;
-
+  margin-top: 45px;
+  margin-left: 25px;
+  font-size: 15px;
+  font-family: "游ゴシック体", YuGothic;
 }
 .logo{
   position: absolute;
@@ -19,7 +20,7 @@
   display: flex;
 }
 .img{
-  margin-top: 60px;
+  margin-top: 55px;
   margin-right: 80px;
   text-align: center;
 
@@ -27,17 +28,17 @@
 .visual{
   position: absolute;
   right: 190px;
-  bottom: 0px;
+  top: 350px;
   display: flex;
   justify-content: flex-end;
 
 }
 
 .text{
-  margin: 20px 0 0  100px;
+  letter-spacing: 0.5px;
+  margin: 15px 0 0  100px;
   display: flex;
   font-size: 25px;
-
 }
 
 li{
