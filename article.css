@@ -7,44 +7,49 @@ a{
   color: black;
 }
 
+
+#blog_archive{
+  width: 60%;
+  margin:auto;
+}
+
+
 .articles{
-    width: 60%;
-}
-
-
- .container{
   display: flex;
-  align-content:space-around;
-  margin: auto;
+  margin:auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
 }
 
-.articles h1{
-}
 
 .img-box{
   margin-top: 30px;
   display: flex;
-  justify-content: center;
+  flex-wrap:wrap;
 }
+
 
 .img-box li {
   display: flex;
   flex-direction: column;
-/*  text-align: center;*/
-  margin-right: 60px;
+  margin-right: 30px;
+  margin-bottom: 30px;
   height: 450px;
   width: 300px;
   transition: .8s;
   border-radius: 5px;
 }
 
+.img-box li:last-child
+{
+  margin-right: 0px;
+}
+
 .img-box li:hover{
   box-shadow: 0 0 8px rgba(0,0,0,.4);
 }
 
-.img-box li:last-child{
-  margin-right: 0;
-}
 
 .img-box img{
   height: 200px;
