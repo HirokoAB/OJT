@@ -234,6 +234,7 @@ footer{
 
   .img-box{
     flex-direction: column;
+    max-width: 100%;
     margin: 20px auto;
   }
 

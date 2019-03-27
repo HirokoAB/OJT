@@ -69,6 +69,7 @@
       <?php endif; ?>
     </main>
   </div>
+  
   <!-- フッター -->
   <footer>
     <div class="footer">
