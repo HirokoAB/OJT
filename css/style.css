@@ -234,6 +234,10 @@ footer{
 
   .img-box{
     flex-direction: column;
+<<<<<<< HEAD
+=======
+    max-width: 100%;
+>>>>>>> 723ee3105c1953bf081a97c17f567888caef22bf
     margin: 20px auto;
   }
 
