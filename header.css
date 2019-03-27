@@ -1,0 +1,112 @@
+.header{
+  position: relative;
+}
+.menu{
+  margin-right: 190px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+.menu p{
+  margin-top: 45px;
+  margin-left: 25px;
+  font-size: 15px;
+  font-family: "游ゴシック体", YuGothic;
+}
+.logo{
+  position: absolute;
+  left: 105px;
+  top: 0px;
+  display: flex;
+}
+.img{
+  margin-top: 55px;
+  margin-right: 80px;
+  text-align: center;
+
+}
+.visual{
+  position: absolute;
+  right: 190px;
+  top: 350px;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.text{
+  letter-spacing: 0.5px;
+  margin: 15px 0 0  100px;
+  display: flex;
+  font-size: 25px;
+}
+
+li{
+  list-style: none;
+}
+
+header{
+  position: relative;
+  width: 100%;
+}
+
+
+
+/*記事一覧*/
+.articles{
+  margin: 50px auto;
+}
+
+.articles h1{
+  text-align: center;
+}
+
+.img-box{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.img-box li{
+  margin-right: 20px;
+  height: 350px;
+}
+
+.img-box li:last-child{
+  margin-right: 0;
+}
+
+.img-box img{
+  height: 200px;
+  width: 300px;
+}
+
+.img-box h3{
+  margin-top: 20px;
+}
+.img-box p{
+  margin-top: 20px;
+  height: 70px;
+}
+
+.img-box a{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*フッター部分*/
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+}
+
+.footer{
+  padding: 20px 0;
+}
+
+/*レスポンシブ対応*/
+@media screen and (max-width:767px){
+  
+}
