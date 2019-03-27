@@ -73,50 +73,29 @@ a{
 }
 
 .next {
-<<<<<<< HEAD
   display: inline-block;
   padding-bottom: 4px;
   position: relative;
-=======
->>>>>>> master
   text-align: right;
   margin-right: 10px;
-  display: inline-block;
-  padding-bottom: 4px;
-  position: relative;
-
 }
 
 .next::after {
-<<<<<<< HEAD
   background-color: gray;
   bottom: 0;
   content: '';
   display: block;
   height: 3px;
-=======
-  background-color: #333;
-  bottom: 0;
-  content: '';
-  display: block;
-  height: 1px;
->>>>>>> master
   right: 0;
   position: absolute;
   transition: .5s all;
   width: 0;
-<<<<<<< HEAD
-}
-
-.next:hover::after {
-  width: 100%;
-=======
->>>>>>> master
 }
 
 .next:hover::after {
   width: 100%;
 }
+
 
 
 
