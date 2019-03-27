@@ -42,58 +42,31 @@
     <!-- 記事一覧 -->
     <main class="articles">
       <h1>Latest Articles</h1>
-      <ul class="img-box">
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_1.png" alt="">
-          <h3 class="date"><?php the_time('Y/m/d');?></h3>
-          <p class="article"><?php the_title();?></p>
-          <div class="read">
-            <a href="" class="next">READ MORE</a>
-          </div>
-        </li>
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_2.png" alt="">
-          <h3 class="date"><?php the_time('Y/m/d');?></h3>
-          <p class="article"><?php the_title();?></p>
-          <div class="read">
-            <a href="" class="next">READ MORE</a>
-          </div>
-        </li>
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_3.png" alt="">
-          <h3 class="date"><?php the_time('Y/m/d');?></h3>
-          <p class="article"><?php the_title();?></p>
-          <div class="read">
-            <a href="" class="next">READ MORE</a>
-          </div>
-        </li>
-      </ul>
-      <ul class="img-box">
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_4.png" alt="">
-          <h3 class="date"><?php the_time('Y/m/d');?></h3>
-          <p class="article"><?php the_title();?></p>
-          <div class="read">
-            <a href="" class="next">READ MORE</a>
-          </div>
-        </li>
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_5.png" alt="">
-          <h3 class="date"><?php the_time('Y/m/d');?></h3>
-          <p class="article"><?php the_title();?></p>
-          <div class="read">
-            <a href="" class="next">READ MORE</a>
-          </div>
-        </li>
-        <li>
-          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_6.png" alt="">
-          <h3 class="date"><?php the_time('Y/m/d');?></h3>
-          <p class="article"><?php the_title();?></p>
-          <div class="read">
-            <a href="" class="next">READ MORE</a>
-          </div>
-        </li>
-      </ul>
+      <!-- 表示件数を指定するための配列 -->
+      <?php $args =  array('posts_per_page' => 6 );?>
+      <!-- postsの中に表示件数で指定した数の投稿を代入 --> 　　
+      <?php $posts = get_posts($args);?>
+      <?php if (have_posts()): ?>
+      <div class="container">
+        <?php foreach ( $posts as $post ): ?>
+          <?php setup_postdata($post);?>
+        <ul class="img-box">
+          <li>
+            <?php if (has_post_thumbnail()): ?>
+              <?php the_post_thumbnail('thumbnail'); ?>
+            <?php else: ?>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_1.png" alt="">
+            <?php endif; ?>
+            <h3 class="date"><?php the_time('Y/m/d');?></h3>
+            <p class="article"><?php the_title();?></p>
+            <div class="read">
+              <a href="" class="next">READ MORE</a>
+            </div>
+          </li>
+        </ul>
+        <?php endforeach; ?>
+      </div>
+      <?php endif; ?>
     </main>
   </div>
   <!-- フッター -->
