@@ -104,7 +104,7 @@ a{
   margin-right: 30px;
   margin-bottom: 30px;
   height: 450px;
-  width: 31.3%;
+  width: 31.1%;
   transition: .8s;
   border-radius: 5px;
 }
@@ -246,16 +246,25 @@ footer{
 
   .img-box li{
     margin: 0 0 20px 0;
-    width: 400px;
+    width: 450px;
     height: 100%;
   }
 
   .next{
     margin-bottom: 20px;
   }
-
 }
 
+@media screen and (max-width:1118px){
+  .img-box li{
+    width: 300px;
+    margin: 0 auto;
+  }
 
+  .img-box li:nth-child(3),
+  .img-box li:last-child{
+    margin: 0 auto;
+  }
+}
 
 
