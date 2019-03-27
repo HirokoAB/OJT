@@ -47,10 +47,9 @@
       <!-- postsの中に表示件数で指定した数の投稿を代入 --> 　　
       <?php $posts = get_posts($args);?>
       <?php if (have_posts()): ?>
-      <div class="container">
+        <ul class="img-box">
         <?php foreach ( $posts as $post ): ?>
           <?php setup_postdata($post);?>
-        <ul class="img-box">
           <li>
             <?php if (has_post_thumbnail()): ?>
               <?php the_post_thumbnail('thumbnail'); ?>
@@ -60,12 +59,11 @@
             <h3 class="date"><?php the_time('Y/m/d');?></h3>
             <p class="article"><?php the_title();?></p>
             <div class="read">
-              <a href="" class="next">READ MORE</a>
+              <a href="<?php the_permalink(); ?>" class="next">READ MORE</a>
             </div>
           </li>
-        </ul>
         <?php endforeach; ?>
-      </div>
+        </ul>
       <?php endif; ?>
     </main>
   </div>
