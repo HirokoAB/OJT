@@ -38,63 +38,63 @@
     </div>
   </header>
 
-  <div id="blog_articles">
-  <!-- 記事一覧 -->
-  <main class="articles">
-    <h1>Latest Articles</h1>
-    <ul class="img-box">
-      <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_1.png" alt="">
-        <h3 class="date"><?php the_time('Y/m/d');?></h3>
-        <p class="article"><?php the_title();?></p>
-        <div class="read">
-          <a href="" class="next">READ MORE</a>
-        </div>
-      </li>
-      <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_2.png" alt="">
-        <h3 class="date"><?php the_time('Y/m/d');?></h3>
-        <p class="article"><?php the_title();?></p>
-        <div class="read">
-          <a href="" class="next">READ MORE</a>
-        </div>
-      </li>
-      <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_3.png" alt="">
-        <h3 class="date"><?php the_time('Y/m/d');?></h3>
-        <p class="article"><?php the_title();?></p>
-        <div class="read">
-          <a href="" class="next">READ MORE</a>
-        </div>
-      </li>
-    </ul>
-    <ul class="img-box">
-      <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_4.png" alt="">
-        <h3 class="date"><?php the_time('Y/m/d');?></h3>
-        <p class="article"><?php the_title();?></p>
-        <div class="read">
-          <a href="" class="next">READ MORE</a>
-        </div>
-      </li>
-      <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_5.png" alt="">
-        <h3 class="date"><?php the_time('Y/m/d');?></h3>
-        <p class="article"><?php the_title();?></p>
-        <div class="read">
-          <a href="" class="next">READ MORE</a>
-        </div>
-      </li>
-      <li>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_6.png" alt="">
-        <h3 class="date"><?php the_time('Y/m/d');?></h3>
-        <p class="article"><?php the_title();?></p>
-        <div class="read">
-          <a href="" class="next">READ MORE</a>
-        </div>
-      </li>
-    </ul>
-  </main>
+  <div id="blog_archive">
+    <!-- 記事一覧 -->
+    <main class="articles">
+      <h1>Latest Articles</h1>
+      <ul class="img-box">
+        <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_1.png" alt="">
+          <h3 class="date"><?php the_time('Y/m/d');?></h3>
+          <p class="article"><?php the_title();?></p>
+          <div class="read">
+            <a href="" class="next">READ MORE</a>
+          </div>
+        </li>
+        <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_2.png" alt="">
+          <h3 class="date"><?php the_time('Y/m/d');?></h3>
+          <p class="article"><?php the_title();?></p>
+          <div class="read">
+            <a href="" class="next">READ MORE</a>
+          </div>
+        </li>
+        <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_3.png" alt="">
+          <h3 class="date"><?php the_time('Y/m/d');?></h3>
+          <p class="article"><?php the_title();?></p>
+          <div class="read">
+            <a href="" class="next">READ MORE</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="img-box">
+        <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_4.png" alt="">
+          <h3 class="date"><?php the_time('Y/m/d');?></h3>
+          <p class="article"><?php the_title();?></p>
+          <div class="read">
+            <a href="" class="next">READ MORE</a>
+          </div>
+        </li>
+        <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_5.png" alt="">
+          <h3 class="date"><?php the_time('Y/m/d');?></h3>
+          <p class="article"><?php the_title();?></p>
+          <div class="read">
+            <a href="" class="next">READ MORE</a>
+          </div>
+        </li>
+        <li>
+          <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_6.png" alt="">
+          <h3 class="date"><?php the_time('Y/m/d');?></h3>
+          <p class="article"><?php the_title();?></p>
+          <div class="read">
+            <a href="" class="next">READ MORE</a>
+          </div>
+        </li>
+      </ul>
+    </main>
   </div>
   <!-- フッター -->
   <footer>
