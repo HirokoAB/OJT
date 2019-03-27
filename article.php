@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>archive</title>
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/reset.css">
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/archive.css">
+  <title>archive</title>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/reset.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/article.css">
 </head>
 <body>
+
 
 <div id="blog_archive" >
 
@@ -16,13 +17,12 @@
   <!-- postsの中に表示件数で指定した数の投稿を代入 --> 　　
   <?php $posts = get_posts($args);?>
   <?php if (have_posts()): ?>
-    <div class="container">
+    <ul class="img-box">  
       <?php foreach ( $posts as $post ): ?>
         <?php setup_postdata($post);?>
-    <ul class="img-box">
       <li>
-                <?php if (has_post_thumbnail()): ?>
-            <?php the_post_thumbnail('thumbnail'); ?>
+          <?php if (has_post_thumbnail()): ?>
+          <?php the_post_thumbnail('thumbnail'); ?>
           <?php else: ?>
             <img src="https://placehold.jp/150x150.png" alt="" height="150", width="150">
       <?php endif; ?>
@@ -38,9 +38,8 @@
           </a>
         </div>
       </li>
-    </ul>
             <?php endforeach; ?>
-    </div>
+      </ul>
     <?php endif; ?>
 
 </main>
@@ -78,6 +77,6 @@
 
 
 
-	
+  
 </body>
 </html>

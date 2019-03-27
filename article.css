@@ -66,20 +66,34 @@ a{
   height: 70px;
 }
 
-.next{
-  /*display: flex;
+
+.read{
+  display: flex;
   justify-content: flex-end;
-  flex-direction: column;*/
+}
+
+.next {
+  display: inline-block;
+  padding-bottom: 4px;
+  position: relative;
   text-align: right;
   margin-right: 10px;
 }
 
-.next::after{
-  margin-top: 10px;
-  content: "";
+.next::after {
+  background-color: gray;
+  bottom: 0;
+  content: '';
   display: block;
-  background-color:#ddd;
-  height: 5px;
+  height: 3px;
+  right: 0;
+  position: absolute;
+  transition: .5s all;
+  width: 0;
+}
+
+.next:hover::after {
+  width: 100%;
 }
 
 
