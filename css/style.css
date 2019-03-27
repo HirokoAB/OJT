@@ -77,18 +77,20 @@ a{
 
 /*記事一覧*/
 #blog_archive{
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 
+
 .articles{
   display: flex;
-  margin:auto;
+  margin: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
 
 .img-box{
   margin-top: 30px;
@@ -232,7 +234,6 @@ footer{
 
   .img-box{
     flex-direction: column;
-    width: 50%;
     margin: 20px auto;
   }
 
