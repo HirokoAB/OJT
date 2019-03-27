@@ -1,3 +1,7 @@
+body{
+  font-family: "游ゴシック体", YuGothic;
+}
+
 li{
   list-style: none;
 }
@@ -72,27 +76,43 @@ a{
 }
 
 /*記事一覧*/
-.articles{
-  margin: 50px auto;
+#blog_archive{
+  width: 60%;
+  margin: auto;
 }
 
-.articles h1{
-  text-align: center;
+.articles{
+  display: flex;
+  margin:auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .img-box{
   margin-top: 30px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.img-box li{
-  margin-right: 20px;
-  height: 350px;
+.img-box li {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  height: 450px;
+  width: 300px;
+  transition: .8s;
+  border-radius: 5px;
 }
 
 .img-box li:last-child{
   margin-right: 0;
+}
+
+.img-box li:hover{
+  box-shadow: 0 0 8px rgba(0,0,0,.4);
 }
 
 .img-box img{
@@ -100,17 +120,15 @@ a{
   width: 300px;
 }
 
-.img-box h3{
+.date{
   margin-top: 20px;
-}
-.img-box p{
-  margin-top: 20px;
-  height: 70px;
+  margin-left: 10px;
 }
 
-.img-box a{
-  display: flex;
-  justify-content: flex-end;
+.article{
+  margin-top: 20px;
+  margin-left: 10px;
+  height: 70px;
 }
 
 /*READ ME ホバー部分*/
@@ -123,14 +141,17 @@ a{
   display: inline-block;
   padding-bottom: 4px;
   position: relative;
+  text-align: right;
+  margin-right: 10px;
 }
 
 .next::after {
-  background-color: #333;
+  margin-top: 10px;
+  background-color: #ddd;
   bottom: 0;
   content: '';
   display: block;
-  height: 1px;
+  height: 5px;
   right: 0;
   position: absolute;
   transition: .5s all;
@@ -140,7 +161,6 @@ a{
 .next:hover::after {
   width: 100%;
 }
-
 
 /*フッター部分*/
 footer{
