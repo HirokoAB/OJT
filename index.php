@@ -38,6 +38,7 @@
     </div>
   </header>
 
+
   <div id="blog_archive">
     <!-- 記事一覧 -->
     <main class="articles">
@@ -56,7 +57,7 @@
             <?php else: ?>
             <img src="<?php echo get_template_directory_uri(); ?>/img/post_img_1.png" alt="">
             <?php endif; ?>
-            <h3 class="date"><?php the_time('Y/m/d');?></h3>
+            <p class="date"><?php the_time('Y/m/d');?></p>
             <p class="article"><?php the_title();?></p>
             <div class="read">
               <a href="<?php the_permalink(); ?>" class="next">READ MORE</a>
@@ -75,6 +76,6 @@
     </div>
   </footer>
 
-  <script src="app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
