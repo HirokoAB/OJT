@@ -11,12 +11,8 @@
 
   <header>
     <!-- ヘッダーメニュー -->
-    <ul class="header-menu">
-      <li>Menu01</li>
-      <li>Menu02</li>
-      <li>Menu03</li>
-      <li>Menu04</li>
-    </ul>
+    <?php wp_nav_menu( $args ); ?> 
+  
     <!-- ヘッダー画像 -->
     <div class="header-img">
       <!-- PC用画像 -->
