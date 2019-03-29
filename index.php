@@ -11,18 +11,22 @@
 
   <header>
     <!-- ヘッダーメニュー -->
-    <ul class="header-menu">
+    <?php wp_nav_menu( $args ); ?> 
+    <!-- <ul class="header-menu">
       <li>Menu01</li>
       <li>Menu02</li>
       <li>Menu03</li>
       <li>Menu04</li>
-    </ul>
+    </ul> -->
     <!-- ヘッダー画像 -->
     <div class="header-img">
       <!-- PC用画像 -->
       <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="" class="logo">
       <div class="slide">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="" class="topImg-pc">
+<!--         <img src="<?php echo get_template_directory_uri(); ?>/img/visual_1_pc.png" alt="" class="topImg-pc"> -->
+   <?php if ( get_header_image() ) : ?>
+    <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="">
+   <?php endif; ?>
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/img/visual_text_pc.png" alt="" class="logoText-pc">
       <!-- スマホ用画像 -->
